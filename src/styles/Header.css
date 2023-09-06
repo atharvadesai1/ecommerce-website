@@ -1,0 +1,16 @@
+.navigation_bar{
+    list-style: none;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+}
+
+.navigation_bar>li{
+    margin: 0px 20px;
+}
+
+.navigation_bar li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
