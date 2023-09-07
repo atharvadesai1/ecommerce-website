@@ -5,7 +5,7 @@ function Menu() {
   return (
     <div>
       <Layout>
-        <h1>Menu</h1>
+        <img src='../images/restaurant1_1.png' alt="" />
       </Layout>
     </div>
   )

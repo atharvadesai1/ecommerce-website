@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {Box, AppBar, Toolbar, Typography} from '@mui/material'
 import { Link } from 'react-router-dom'
@@ -8,28 +9,28 @@ function Header() {
   return (
     <>
       <Box>
-        <AppBar component='nav' sx={{bgcolor:'black'}}>
+        <AppBar component='nav' sx={{bgcolor:'transparent'}}>
           <Toolbar>
-            <Typography color='white' component='div' variant='h6' sx={{flexGrow: 1} }>
+            <Typography className="logo_text" color='white' component='div' variant='h6' sx={{flexGrow: 1,fontFamily:'headerr1',fontWeight:'bold'} }>
             <RestaurantIcon sx={{position:'relative',top:'5px'}}/>
             &nbsp;Spice Spot</Typography>
 
             <Box sx={{display: {xs:'none', sm:'block'}}}>
               <ul className='navigation_bar'>
                 <li>
-                  <Link to={'/'}>Home</Link>
+                  <Link to={'/'}>HOME</Link>
                 </li>
                 <li>
-                  <Link to={'/about'}>About</Link>
+                  <Link to={'/about'}>ABOUT</Link>
                 </li>
                 <li>
-                  <Link to={'/menu'}>Menu</Link>
+                  <Link to={'/menu'}>MENU</Link>
                 </li>
                 <li>
-                  <Link to={'/orders'}>Orders</Link>
+                  <Link to={'/orders'}>ORDERS</Link>
                 </li>
                 <li>
-                  <Link to={'/contact'}>Contact</Link>
+                  <Link to={'/contact'}>CONTACT</Link>
                 </li>
               </ul>
             </Box>
