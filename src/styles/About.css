@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Common;
+    src: url('../font-styles/Aclonica-Regular.ttf');
+}
+
+@font-face {
+    font-family: Parent;
+    src: url('../font-styles/Parent.ttf');
+}
+
+.about{
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.common_heading{
+        font-family: Common; 
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        z-index: 200;
+        font-size: 63px;
+        border-bottom: 2px solid #39fe39; 
+}
+
+.about_container{
+    margin: 40px 40px 10px 40px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    gap: 40px;
+    position: absolute; 
+    top: 180px;
+    /* transform: translate(-50%);  */
+}
+
+.content_heading{
+    font-family: Parent;
+    font-size: 40px;
+    color: white;
+}
+.about_content>p{
+    color: white;
+}
+
+
+

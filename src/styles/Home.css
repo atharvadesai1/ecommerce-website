@@ -59,6 +59,7 @@
 .header_container>button:hover{
     background-color: white;
     color: black;
+    font-weight: bold;
     transition: 0.5s;
 }
 
