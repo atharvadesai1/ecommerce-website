@@ -17,10 +17,13 @@
 }
 
 .header_container{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .header_container>h1{
@@ -28,9 +31,10 @@
     text-align: center;
     font-family: headerr2;
     font-size: 63px;
+    margin-bottom: 40px;
 }
 
-.header_container>button{
+.btn{
     border: 2px white solid;
     background-color: transparent;
     color: white;
@@ -38,25 +42,13 @@
     font-size: 15px;
     padding: 10px;
     position: relative;
-    left: 50%;
+    left: 37%;
     transform: translate(-50%);
-    margin-top: 30px;
+    text-decoration: none;
 }
 
-.header_container>button{
-    border: 2px white solid;
-    background-color: transparent;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-    padding: 10px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 40px;
-}
 
-.header_container>button:hover{
+.btn:hover{
     background-color: white;
     color: black;
     font-weight: bold;
