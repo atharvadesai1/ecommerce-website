@@ -5,7 +5,7 @@ function Orders() {
   return (
     <div>
       <Layout>
-        <h1>Orders</h1>
+        
       </Layout>
     </div>
   );   
