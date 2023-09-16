@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Common;
+    src: url('../font-styles/Aclonica-Regular.ttf');
+}
+
+@font-face {
+    font-family: Parent;
+    src: url('../font-styles/Parent.ttf');
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    position: absolute;
+    top: 100px;   
+}
+
+body{
+    background-color: white;
+}
+
+.bottombtns{
+    display: flex;
+    justify-content: space-between;
+}
