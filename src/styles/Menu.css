@@ -18,6 +18,12 @@
     top: 100px;   
 }
 
+.card-items{
+    flex: 0 0 calc(33.33% - 20px); /* Initial width for larger screens (3 items per row) */
+    margin-right: 20px; /* Adjust the margin as needed */
+    width: 350px; /* Set the fixed width */
+}
+
 body{
     background-color: white;
 }
@@ -26,3 +32,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+    .card-items {
+      flex: 0 0 calc(50% - 10px); /* 2 items per row */
+      margin-right: 10px; /* Adjust the margin as needed */
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 480px) {
+    .card-items{
+      flex: 0 0 100%; /* 1 item per row (full width) */
+      margin-right: 0; /* No margin on smaller screens */
+    }
+  }
