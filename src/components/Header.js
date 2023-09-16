@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom'
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import '../styles/Header.css';
 
+
 function Header() {
   return (
     <>
       <Box>
-        <AppBar component='nav' sx={{bgcolor:'transparent'}}>
+        <AppBar component='nav' sx={{bgcolor:'black', opacity:0.95}}>
           <Toolbar>
             <Typography className="logo_text" color='white' component='div' variant='h6' sx={{flexGrow: 1,fontFamily:'headerr1',fontWeight:'bold'} }>
             <RestaurantIcon sx={{position:'relative',top:'5px'}}/>
