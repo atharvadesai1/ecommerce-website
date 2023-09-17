@@ -1,0 +1,34 @@
+@font-face {
+    font-family: headerr1;
+    src: url('../font-styles/Parent.ttf');
+}
+@font-face {
+    font-family: headerr2;
+    src: url('../font-styles/Aclonica-Regular.ttf');
+}
+
+.contact{
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+}
+
+.contactheading{
+    font-family: Parent;
+    color: white;
+    font-size: 40px;
+    margin-top: 70px;
+    border-bottom: 2px #39fe39 solid;
+    margin-bottom: 0px;
+    z-index: 100;
+}
+
+.contact_form{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
