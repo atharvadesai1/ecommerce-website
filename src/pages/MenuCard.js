@@ -10,11 +10,14 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+// import Menu from './Menu';
 import '../styles/Menu.css'
-// import './Menu'
+// import { Menu } from '@mui/material';
 
+// let itemsadded=0
 
 function MenuCard(props) {
+    // const [itemsadded, setitemsadded] = useState(0)
     const [quantity, setQuantity] = useState(1);
     
     const handleIncrement = () => {
@@ -27,8 +30,14 @@ function MenuCard(props) {
         }
     };
 
+    const clickAddToCart = () => {
+        props.setitemsadded(props.itemsadded+quantity)
+        console.log("guttar"+props.itemsadded)
+    }
+
   return (
     <div className='container'>
+        
         <Card sx={{ maxWidth: 350, marginBottom: 4}}>
             <CardMedia
                 sx={{ height: 200, initalWidth: 350}}
@@ -50,7 +59,8 @@ function MenuCard(props) {
                 <Button
                     variant="contained"
                     color="primary"
-                    style={{ padding: '6px 12px', fontSize: '12px' }} 
+                    style={{ padding: '6px 12px', fontSize: '12px' }}
+                    onClick={clickAddToCart} 
                 >
                     <IconButton color="inherit" aria-label="Add to Cart" style={{ padding: '6px' }}>
                         <AddShoppingCartIcon fontSize="small" /> {/* Adjust the icon size as needed */}
@@ -72,4 +82,5 @@ function MenuCard(props) {
   )
 }
 
-export default MenuCard
+export default MenuCard;
+

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import MenuCard from './MenuCard'
+// import { itemsadded } from './MenuCard'
 import '../styles/Menu.css'
 import dinnerFood from './dinner'
 import * as React from 'react';
@@ -17,6 +18,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function Menu() {
   // const [menuheading,setmenuheading] = React.useState('Special Dishes')
     const [category, setcategory] = React.useState('');
+    const [itemsadded, setitemsadded] = React.useState(0)
   
     const handleChange = (event) => {
       setcategory(event.target.value);
@@ -56,7 +58,8 @@ function Menu() {
             <div className="centremenu">Special Dishes</div>
 
             <IconButton aria-label="cart">
-              <StyledBadge badgeContent={4} color="secondary">
+              {/* {console.log("Man"+itemsadded)} */}
+              <StyledBadge badgeContent={itemsadded} color="secondary">
                 <ShoppingCartIcon />
               </StyledBadge>
             </IconButton>
@@ -65,7 +68,7 @@ function Menu() {
         <div className="cards">
           {dinnerFood.map((element)=>{
             return(
-              <MenuCard className="card-items" foodName={element.name} foodImage={element.image} foodDesc={element.description} foodPrice={element.price}></MenuCard>
+              <MenuCard className="card-items" foodName={element.name} foodImage={element.image} foodDesc={element.description} foodPrice={element.price} itemsadded={itemsadded} setitemsadded={setitemsadded}></MenuCard>
             )
           })}
         </div>
@@ -74,4 +77,5 @@ function Menu() {
   )
 }
 
-export default Menu
+export default Menu;
+
