@@ -18,7 +18,7 @@ function About() {
         <div className="about_content">
           <div className="content_heading">Our Mission</div><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est aut esse odio repudiandae, optio facere, a dolore illum provident enim dolorem nam non dolor. Sunt sed illum maxime minus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem incidunt iure autem perspiciatis similique ratione, minima nostrum impedit a facere dolor, enim saepe iste dolorem ipsum consequuntur corporis cum ex. <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde dolorum perferendis non, accusantium voluptatibus eius iusto earum alias? Assumenda quas nisi consequuntur vitae ad dolorem corporis porro esse labore sequi! <br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus odit sit doloremque sapiente, eius iusto nemo aspernatur atque molestias, voluptatem ut. Unde architecto consequuntur asperiores ab delectus maiores perferendis?</p>
-        </div>
+        </div> 
       </div>
     </Layout>
   );
