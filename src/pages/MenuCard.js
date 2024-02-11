@@ -13,14 +13,19 @@ import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 // import { useDispatch } from 'react-redux';
 // import Menu from './Menu';
 import '../styles/Menu.css'
+import { Link} from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+// import ItemsDetails from './ItemsDetails'
 // import {ADD} from '../redux/actions/action'
 // import { Menu } from '@mui/material';
 
 // let itemsadded=0
+// var exportdetails;
 
 function MenuCard(props) {
     // const [itemsadded, setitemsadded] = useState(0)
     const [quantity, setQuantity] = useState(1);
+    // const navigate = useNavigate()
     // const dispatch = useDispatch();
     
     const handleIncrement = () => {
@@ -36,20 +41,26 @@ function MenuCard(props) {
     const clickAddToCart = () => {
         props.setitemsadded(props.itemsadded+quantity)
         // console.log("guttar"+props.itemsadded)
-        console.log(props.ele)
         // dispatch(ADD(props.ele));
 
     }
 
+    // const sendDetails = ()=>{
+    //     console.log(props.ele)
+    //     navigate('/itemsdetails', { state: { details: props.ele } })
+    // }
+
+
   return (
     <div>
-        
         <Card sx={{ maxWidth: 350, marginBottom: 4, boxShadow: '0 8px 16px rgba(0, 0, 0, 0.499)'}}>
+            <Link to={'/itemsdetails'} /*</Card>onClick={sendDetails}*/>
             <CardMedia
                 sx={{ height: 200, initalWidth: 350}}
                 image={props.foodImage}
                 title="green iguana"
             />
+            </Link>
             <CardContent>
                 <Typography gutterBottom component="div" sx={{fontFamily:'DM Serif Display',fontSize:'30px',color:'black'}}>
                 {props.foodName}
@@ -89,4 +100,3 @@ function MenuCard(props) {
 }
 
 export default MenuCard;
-

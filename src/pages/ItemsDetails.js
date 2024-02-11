@@ -5,12 +5,29 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 import '../styles/Cards.css'
+// import { useLocation } from 'react-router-dom';
+// import { exportdetails } from './MenuCard';
+
+// console.log(exportdetails)
 
 function ItemsDetails() {
+    // const location = useLocation();
+    // const details = location.state ? location.state.details : null;
+    // console.log(details)
+
+    // // Check if details is not null before using it
+    // if (!details) {
+    //     return (
+    //     <div>
+    //         <h1>Error: No details found</h1>
+    //     </div>
+    //     );
+    // }
+
   return (
     <Layout>
         <div>
-            <div className="box">
+            <div className="box"> 
                 <div className="heading">
                     <h1 style={{textAlign:'center'}}>Items Details</h1>   
                 </div>

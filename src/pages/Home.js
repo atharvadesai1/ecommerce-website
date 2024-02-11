@@ -11,7 +11,7 @@ function Home() {
           <div className="header_container">
             <h1>"Where Every Bite<br/>Tells a Delicious<br/>Tale"</h1>
             <Link className='btnnn' to={'/menu'}>BOOK YOUR TABLE</Link>
-          </div>
+          </div> 
         </div>
       </Layout>
   )
