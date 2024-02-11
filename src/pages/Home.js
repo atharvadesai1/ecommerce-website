@@ -10,7 +10,7 @@ function Home() {
         <div className="home" style={{backgroundImage:`url(${BgImage})`}}>
           <div className="header_container">
             <h1>"Where Every Bite<br/>Tells a Delicious<br/>Tale"</h1>
-            <Link className='btn' to={'/menu'}>BOOK YOUR TABLE</Link>
+            <Link className='btnnn' to={'/menu'}>BOOK YOUR TABLE</Link>
           </div>
         </div>
       </Layout>

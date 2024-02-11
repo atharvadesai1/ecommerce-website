@@ -10,8 +10,10 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+// import { useDispatch } from 'react-redux';
 // import Menu from './Menu';
 import '../styles/Menu.css'
+// import {ADD} from '../redux/actions/action'
 // import { Menu } from '@mui/material';
 
 // let itemsadded=0
@@ -19,6 +21,7 @@ import '../styles/Menu.css'
 function MenuCard(props) {
     // const [itemsadded, setitemsadded] = useState(0)
     const [quantity, setQuantity] = useState(1);
+    // const dispatch = useDispatch();
     
     const handleIncrement = () => {
         setQuantity(quantity + 1);
@@ -32,11 +35,14 @@ function MenuCard(props) {
 
     const clickAddToCart = () => {
         props.setitemsadded(props.itemsadded+quantity)
-        console.log("guttar"+props.itemsadded)
+        // console.log("guttar"+props.itemsadded)
+        console.log(props.ele)
+        // dispatch(ADD(props.ele));
+
     }
 
   return (
-    <div className='container'>
+    <div>
         
         <Card sx={{ maxWidth: 350, marginBottom: 4}}>
             <CardMedia

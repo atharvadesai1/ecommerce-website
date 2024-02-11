@@ -12,6 +12,7 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import { useSelector } from 'react-redux';
 
 
 
@@ -19,6 +20,8 @@ function Menu() {
   // const [menuheading,setmenuheading] = React.useState('Special Dishes')
     const [category, setcategory] = React.useState('');
     const [itemsadded, setitemsadded] = React.useState(0)
+    // const getdata = useSelector((state)=>state.cartreducer);
+    // console.log(getdata)
   
     const handleChange = (event) => {
       setcategory(event.target.value);
@@ -68,7 +71,7 @@ function Menu() {
         <div className="cards">
           {dinnerFood.map((element)=>{
             return(
-              <MenuCard className="card-items" foodName={element.name} foodImage={element.image} foodDesc={element.description} foodPrice={element.price} itemsadded={itemsadded} setitemsadded={setitemsadded}></MenuCard>
+              <MenuCard className="card-items" ele={element} foodName={element.name} foodImage={element.image} foodDesc={element.description} foodPrice={element.price} itemsadded={itemsadded} setitemsadded={setitemsadded}></MenuCard>
             )
           })}
         </div>

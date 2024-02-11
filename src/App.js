@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/PageNotFound";
 import Orders from "./pages/Orders";
-import CardDetails from "./pages/CardDetails";
+import ItemsDetails from "./pages/ItemsDetails";
 function App() {
   return (
     <div>     
@@ -16,7 +16,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/orders" element={<Orders />}/>
-            <Route path="/carddetails" element={<CardDetails />}/>
+            <Route path="/itemsdetails" element={<ItemsDetails/>}/>
             <Route path="*" element={<Pagenotfound />} />
           </Routes>
         </BrowserRouter>

@@ -6,7 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 import '../styles/Cards.css'
 
-function CardDetails() {
+function ItemsDetails() {
   return (
     <Layout>
         <div>
@@ -46,4 +46,4 @@ function CardDetails() {
   )
 }
 
-export default CardDetails
+export default ItemsDetails
