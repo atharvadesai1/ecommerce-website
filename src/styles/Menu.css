@@ -22,6 +22,8 @@
     flex: 0 0 calc(33.33% - 20px); /* Initial width for larger screens (3 items per row) */
     margin-right: 20px; /* Adjust the margin as needed */
     width: 350px; /* Set the fixed width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.499); /* Set the box shadow */
+    border: 2px black solid;
 }
 
 body{

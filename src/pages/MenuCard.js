@@ -44,7 +44,7 @@ function MenuCard(props) {
   return (
     <div>
         
-        <Card sx={{ maxWidth: 350, marginBottom: 4}}>
+        <Card sx={{ maxWidth: 350, marginBottom: 4, boxShadow: '0 8px 16px rgba(0, 0, 0, 0.499)'}}>
             <CardMedia
                 sx={{ height: 200, initalWidth: 350}}
                 image={props.foodImage}
