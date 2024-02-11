@@ -5,19 +5,21 @@ import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/PageNotFound";
 import Orders from "./pages/Orders";
+import CardDetails from "./pages/CardDetails";
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/orders" element={<Orders />}/>
-          <Route path="*" element={<Pagenotfound />} />
-        </Routes>
-      </BrowserRouter>
+    <div>     
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/orders" element={<Orders />}/>
+            <Route path="/carddetails" element={<CardDetails />}/>
+            <Route path="*" element={<Pagenotfound />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
